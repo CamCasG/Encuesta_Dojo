@@ -1,4 +1,4 @@
-.container{
+.container, .container_2{
     margin: 0 auto;
     padding: 50px;
 }
@@ -15,6 +15,11 @@ h2{
     padding: 10px;
 }
 
+.tabla{
+    width: 500px;
+    height: 250px;
+    border: 2px solid black;
+}
 
 
 
