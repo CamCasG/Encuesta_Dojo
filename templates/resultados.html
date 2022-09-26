@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultados</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    
+    <h1>Información guardada</h1>
+
+    <table>
+        <tr>
+            <td>Nombre:</td>
+            <td>{{ session['name'] }}</td>
+        </tr>
+        <tr>
+            <td>Localidad:</td>
+            <td>{{ session['local'] }}</td>
+        </tr>
+        <tr>
+            <td>Lenguaje favorito: </td>
+            <td>{{ session['fav'] }}</td>
+        </tr>
+        <tr>
+            <td>Comentarios:</td>
+            <td>{{ session['comments'] }}</td>
+        </tr>
+    </table>
+
+
+    <a class="btn btn-success" href="/" role="button">Volver atrás</a>
+</body>
+</html>

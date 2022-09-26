@@ -1,0 +1,20 @@
+.container{
+    margin: 0 auto;
+    padding: 50px;
+}
+
+h2{
+    padding: 10px;
+}
+
+.fondo{
+    width: 800px;
+    height: 650px;
+    border: 2px solid black;
+    background-color: #BABABA;
+    padding: 10px;
+}
+
+
+
+
